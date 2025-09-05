@@ -1,0 +1,452 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Pranjal Restaurant Menu
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-50 min-h-screen flex flex-col">
+  <header class="bg-white shadow-md sticky top-0 z-50">
+   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center space-x-3">
+     <img alt="Pranjal Restaurant logo with stylized PR letters in red and white" class="w-12 h-12 rounded-full object-cover" height="60" src="https://storage.googleapis.com/a1aa/image/e0723985-1a74-49b8-54b1-d13c25ce7b12.jpg" width="60"/>
+     <h1 class="text-2xl font-semibold text-red-600">
+      Pranjal Restaurant
+     </h1>
+    </div>
+    <nav class="hidden md:flex space-x-8 text-gray-700 font-medium">
+     <a class="hover:text-red-600 transition" href="#starters">
+      Starters
+     </a>
+     <a class="hover:text-red-600 transition" href="#main-course">
+      Main Course
+     </a>
+     <a class="hover:text-red-600 transition" href="#desserts">
+      Desserts
+     </a>
+     <a class="hover:text-red-600 transition" href="#beverages">
+      Beverages
+     </a>
+    </nav>
+    <button aria-label="Toggle menu" class="md:hidden text-red-600 focus:outline-none" id="menu-btn">
+     <i class="fas fa-bars fa-lg">
+     </i>
+    </button>
+   </div>
+   <nav aria-label="Mobile menu" class="md:hidden bg-white border-t border-gray-200 hidden" id="mobile-menu">
+    <a class="block px-6 py-3 text-gray-700 font-medium hover:bg-red-50 hover:text-red-600" href="#starters">
+     Starters
+    </a>
+    <a class="block px-6 py-3 text-gray-700 font-medium hover:bg-red-50 hover:text-red-600" href="#main-course">
+     Main Course
+    </a>
+    <a class="block px-6 py-3 text-gray-700 font-medium hover:bg-red-50 hover:text-red-600" href="#desserts">
+     Desserts
+    </a>
+    <a class="block px-6 py-3 text-gray-700 font-medium hover:bg-red-50 hover:text-red-600" href="#beverages">
+     Beverages
+    </a>
+   </nav>
+  </header>
+  <main class="flex-grow max-w-7xl mx-auto px-6 py-10">
+   <section class="mb-16 text-center">
+    <h2 class="text-4xl font-extrabold text-red-600 mb-3">
+     Our Menu
+    </h2>
+    <p class="text-gray-600 max-w-2xl mx-auto">
+     Welcome to Pranjal Restaurant! Explore our delicious menu crafted with
+        fresh ingredients and love.
+    </p>
+   </section>
+   <!-- Starters Section -->
+   <section class="mb-16" id="starters">
+    <h3 class="text-3xl font-semibold text-red-600 mb-8 border-b-2 border-red-600 inline-block pb-1">
+     Starters
+    </h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+     <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+      <img alt="Close-up of spicy paneer tikka cubes garnished with coriander and lemon wedges on a rustic wooden plate" class="w-full h-48 object-cover" height="250" src="https://storage.googleapis.com/a1aa/image/ca82e8f9-e542-4306-bf26-174dd57c301f.jpg" width="400"/>
+      <div class="p-5 flex flex-col flex-grow">
+       <h4 class="text-xl font-semibold mb-2">
+        Spicy Paneer Tikka
+       </h4>
+       <p class="text-gray-600 flex-grow">
+        Marinated paneer cubes grilled to perfection with Indian spices.
+       </p>
+       <div class="mt-4 font-bold text-red-600 text-lg">
+        ₹250
+       </div>
+      </div>
+     </article>
+     <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+      <img alt="Plate of crispy Chicken 65 garnished with curry leaves and green chilies on a white ceramic plate" class="w-full h-48 object-cover" height="250" src="https://storage.googleapis.com/a1aa/image/40aaac70-4055-446a-b48e-ac5223962b9c.jpg" width="400"/>
+      <div class="p-5 flex flex-col flex-grow">
+       <h4 class="text-xl font-semibold mb-2">
+        Chicken 65
+       </h4>
+       <p class="text-gray-600 flex-grow">
+        Deep-fried spicy chicken bites with a tangy flavor.
+       </p>
+       <div class="mt-4 font-bold text-red-600 text-lg">
+        ₹350
+       </div>
+      </div>
+     </article>
+     <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+      <img alt="Golden crispy vegetable spring rolls served with sweet chili sauce on a white plate" class="w-full h-48 object-cover" height="250" src="https://storage.googleapis.com/a1aa/image/7a9e38ea-d752-432c-ecac-873c8d72379c.jpg" width="400"/>
+      <div class="p-5 flex flex-col flex-grow">
+       <h4 class="text-xl font-semibold mb-2">
+        Vegetable Spring Rolls
+       </h4>
+       <p class="text-gray-600 flex-grow">
+        Crispy rolls stuffed with fresh vegetables and served with sauce.
+       </p>
+       <div class="mt-4 font-bold text-red-600 text-lg">
+        ₹200
+       </div>
+      </div>
+     </article>
+     <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+      <img alt="Golden fried Fish Amritsari pieces garnished with lemon slices and green chutney on a rustic plate" class="w-full h-48 object-cover" height="250" src="https://storage.googleapis.com/a1aa/image/6710739d-d1ed-4205-f0a1-747afbe99e11.jpg" width="400"/>
+      <div class="p-5 flex flex-col flex-grow">
+       <h4 class="text-xl font-semibold mb-2">
+        Fish Amritsari
+       </h4>
+       <p class="text-gray-600 flex-grow">
+        Batter-fried fish with a blend of Indian spices from Amritsar.
+       </p>
+       <div class="mt-4 font-bold text-red-600 text-lg">
+        ₹400
+       </div>
+      </div>
+     </article>
+     <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+      <img alt="Green colored Hara Bhara Kebabs served with mint chutney and lemon wedges on a wooden board" class="w-full h-48 object-cover" height="250" src="https://storage.googleapis.com/a1aa/image/02aa0694-6035-4257-5f33-f9cd8afef691.jpg" width="400"/>
+      <div class="p-5 flex flex-col flex-grow">
+       <h4 class="text-xl font-semibold mb-2">
+        Hara Bhara Kebab
+       </h4>
+       <p class="text-gray-600 flex-grow">
+        Spinach and green peas patties, healthy and delicious.
+       </p>
+       <div class="mt-4 font-bold text-red-600 text-lg">
+        ₹220
+       </div>
+      </div>
+     </article>
+     <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+      <img alt="Plate of spicy Indo-Chinese Paneer Chili with bell peppers and onions garnished with spring onions" class="w-full h-48 object-cover" height="250" src="https://storage.googleapis.com/a1aa/image/b23481e0-7837-46ac-5a45-d46d480ff976.jpg" width="400"/>
+      <div class="p-5 flex flex-col flex-grow">
+       <h4 class="text-xl font-semibold mb-2">
+        Paneer Chili
+       </h4>
+       <p class="text-gray-600 flex-grow">
+        Indo-Chinese style spicy paneer with peppers and onions.
+       </p>
+       <div class="mt-4 font-bold text-red-600 text-lg">
+        ₹250
+       </div>
+      </div>
+     </article>
+    </div>
+   </section>
+   <!-- Main Course Section -->
+   <section class="mb-16" id="main-course">
+    <h3 class="text-3xl font-semibold text-red-600 mb-8 border-b-2 border-red-600 inline-block pb-1">
+     Main Course
+    </h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+     <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+      <img alt="Creamy butter chicken curry garnished with fresh coriander served in a white bowl" class="w-full h-48 object-cover" height="250" src="https://storage.googleapis.com/a1aa/image/60f92de3-93c5-4194-0d27-def784d939da.jpg" width="400"/>
+      <div class="p-5 flex flex-col flex-grow">
+       <h4 class="text-xl font-semibold mb-2">
+        Butter Chicken
+       </h4>
+       <p class="text-gray-600 flex-grow">
+        Classic North Indian chicken curry in a creamy tomato gravy.
+       </p>
+       <div class="mt-4 font-bold text-red-600 text-lg">
+        ₹450
+       </div>
+      </div>
+     </article>
+     <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+      <img alt="Paneer Butter Masala curry with paneer cubes in rich tomato gravy garnished with cream and coriander" class="w-full h-48 object-cover" height="250" src="https://storage.googleapis.com/a1aa/image/254e4300-cb35-46a2-a2c4-b779c2a484e8.jpg" width="400"/>
+      <div class="p-5 flex flex-col flex-grow">
+       <h4 class="text-xl font-semibold mb-2">
+        Paneer Butter Masala
+       </h4>
+       <p class="text-gray-600 flex-grow">
+        Soft paneer cubes cooked in a rich buttery tomato sauce.
+       </p>
+       <div class="mt-4 font-bold text-red-600 text-lg">
+        ₹400
+       </div>
+      </div>
+     </article>
+     <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+      <img alt="Black lentil Dal Makhani served in a rustic bowl garnished with cream and coriander" class="w-full h-48 object-cover" height="250" src="https://storage.googleapis.com/a1aa/image/deb9620b-a043-4322-a53c-87a2ab04458b.jpg" width="400"/>
+      <div class="p-5 flex flex-col flex-grow">
+       <h4 class="text-xl font-semibold mb-2">
+        Dal Makhani
+       </h4>
+       <p class="text-gray-600 flex-grow">
+        Slow-cooked black lentils in a creamy buttery sauce.
+       </p>
+       <div class="mt-4 font-bold text-red-600 text-lg">
+        ₹350
+       </div>
+      </div>
+     </article>
+     <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+      <img alt="Plate of aromatic chicken biryani with saffron rice garnished with boiled egg and fried onions" class="w-full h-48 object-cover" height="250" src="https://storage.googleapis.com/a1aa/image/48971d8f-3ee1-4e36-9601-b6829b7c4422.jpg" width="400"/>
+      <div class="p-5 flex flex-col flex-grow">
+       <h4 class="text-xl font-semibold mb-2">
+        Chicken Biryani
+       </h4>
+       <p class="text-gray-600 flex-grow">
+        Fragrant basmati rice cooked with marinated chicken and spices.
+       </p>
+       <div class="mt-4 font-bold text-red-600 text-lg">
+        ₹480
+       </div>
+      </div>
+     </article>
+     <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+      <img alt="Colorful vegetable biryani with mixed vegetables and saffron rice served in a white bowl" class="w-full h-48 object-cover" height="250" src="https://storage.googleapis.com/a1aa/image/7f9c7eb8-d899-4e08-0af0-80823fbe7c73.jpg" width="400"/>
+      <div class="p-5 flex flex-col flex-grow">
+       <h4 class="text-xl font-semibold mb-2">
+        Veg Biryani
+       </h4>
+       <p class="text-gray-600 flex-grow">
+        Aromatic basmati rice cooked with fresh vegetables and spices.
+       </p>
+       <div class="mt-4 font-bold text-red-600 text-lg">
+        ₹400
+       </div>
+      </div>
+     </article>
+     <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+      <img alt="Rich and spicy Rogan Josh lamb curry garnished with fresh coriander in a white bowl" class="w-full h-48 object-cover" height="250" src="https://storage.googleapis.com/a1aa/image/5953224c-7dcd-43de-74c1-530c463cf9b6.jpg" width="400"/>
+      <div class="p-5 flex flex-col flex-grow">
+       <h4 class="text-xl font-semibold mb-2">
+        Rogan Josh
+       </h4>
+       <p class="text-gray-600 flex-grow">
+        Traditional Kashmiri lamb curry cooked with aromatic spices.
+       </p>
+       <div class="mt-4 font-bold text-red-600 text-lg">
+        ₹500
+       </div>
+      </div>
+     </article>
+    </div>
+   </section>
+   <!-- Desserts Section -->
+   <section class="mb-16" id="desserts">
+    <h3 class="text-3xl font-semibold text-red-600 mb-8 border-b-2 border-red-600 inline-block pb-1">
+     Desserts
+    </h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+     <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+      <img alt="Three round golden brown Gulab Jamun soaked in rose flavored sugar syrup on a white plate" class="w-full h-48 object-cover" height="250" src="https://storage.googleapis.com/a1aa/image/77bfe8f0-4c71-4bad-de95-91a3d9693eae.jpg" width="400"/>
+      <div class="p-5 flex flex-col flex-grow">
+       <h4 class="text-xl font-semibold mb-2">
+        Gulab Jamun
+       </h4>
+       <p class="text-gray-600 flex-grow">
+        Soft milk-solid balls soaked in rose-flavored sugar syrup.
+       </p>
+       <div class="mt-4 font-bold text-red-600 text-lg">
+        ₹150
+       </div>
+      </div>
+     </article>
+     <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+      <img alt="Two white spongy Rasmalai discs soaked in saffron flavored milk garnished with pistachios" class="w-full h-48 object-cover" height="250" src="https://storage.googleapis.com/a1aa/image/9c5a6845-d66c-48d4-ac95-c217d6ceaffe.jpg" width="400"/>
+      <div class="p-5 flex flex-col flex-grow">
+       <h4 class="text-xl font-semibold mb-2">
+        Rasmalai
+       </h4>
+       <p class="text-gray-600 flex-grow">
+        Soft cheese patties soaked in sweetened saffron milk.
+       </p>
+       <div class="mt-4 font-bold text-red-600 text-lg">
+        ₹170
+       </div>
+      </div>
+     </article>
+     <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+      <img alt="Creamy rice pudding Kheer served in a white bowl garnished with almonds and saffron strands" class="w-full h-48 object-cover" height="250" src="https://storage.googleapis.com/a1aa/image/13991cc3-2ad1-4780-be9c-3e396e901368.jpg" width="400"/>
+      <div class="p-5 flex flex-col flex-grow">
+       <h4 class="text-xl font-semibold mb-2">
+        Kheer
+       </h4>
+       <p class="text-gray-600 flex-grow">
+        Traditional Indian rice pudding flavored with cardamom and nuts.
+       </p>
+       <div class="mt-4 font-bold text-red-600 text-lg">
+        ₹130
+       </div>
+      </div>
+     </article>
+     <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+      <img alt="Bright orange spiral shaped Jalebi sweets stacked on a white plate" class="w-full h-48 object-cover" height="250" src="https://storage.googleapis.com/a1aa/image/5abb93b1-2aa6-495b-b6f9-4e8a7a1c890a.jpg" width="400"/>
+      <div class="p-5 flex flex-col flex-grow">
+       <h4 class="text-xl font-semibold mb-2">
+        Jalebi
+       </h4>
+       <p class="text-gray-600 flex-grow">
+        Crispy, syrup-soaked spiral shaped Indian sweet.
+       </p>
+       <div class="mt-4 font-bold text-red-600 text-lg">
+        ₹120
+       </div>
+      </div>
+     </article>
+     <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+      <img alt="Traditional Indian Kulfi ice cream on a stick with pistachio and saffron flavor" class="w-full h-48 object-cover" height="250" src="https://storage.googleapis.com/a1aa/image/147b88e6-442a-4b9f-fe22-e83301e0bc72.jpg" width="400"/>
+      <div class="p-5 flex flex-col flex-grow">
+       <h4 class="text-xl font-semibold mb-2">
+        Kulfi
+       </h4>
+       <p class="text-gray-600 flex-grow">
+        Creamy Indian ice cream flavored with pistachio and saffron.
+       </p>
+       <div class="mt-4 font-bold text-red-600 text-lg">
+        ₹150
+       </div>
+      </div>
+     </article>
+     <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+      <img alt="Warm carrot halwa dessert garnished with chopped nuts served in a white bowl" class="w-full h-48 object-cover" height="250" src="https://storage.googleapis.com/a1aa/image/bfdd8184-5f22-4783-f456-132a075edafc.jpg" width="400"/>
+      <div class="p-5 flex flex-col flex-grow">
+       <h4 class="text-xl font-semibold mb-2">
+        Carrot Halwa
+       </h4>
+       <p class="text-gray-600 flex-grow">
+        Sweet carrot pudding cooked with milk, sugar, and nuts.
+       </p>
+       <div class="mt-4 font-bold text-red-600 text-lg">
+        ₹170
+       </div>
+      </div>
+     </article>
+    </div>
+   </section>
+   <!-- Beverages Section -->
+   <section class="mb-16" id="beverages">
+    <h3 class="text-3xl font-semibold text-red-600 mb-8 border-b-2 border-red-600 inline-block pb-1">
+     Beverages
+    </h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+     <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+      <img alt="Tall glass of creamy mango lassi with a straw and mint leaf garnish" class="w-full h-48 object-cover" height="250" src="https://storage.googleapis.com/a1aa/image/5c24531b-ff89-4941-a559-0a35003385ad.jpg" width="400"/>
+      <div class="p-5 flex flex-col flex-grow">
+       <h4 class="text-xl font-semibold mb-2">
+        Mango Lassi
+       </h4>
+       <p class="text-gray-600 flex-grow">
+        Refreshing yogurt-based mango smoothie with a hint of cardamom.
+       </p>
+       <div class="mt-4 font-bold text-red-600 text-lg">
+        ₹120
+       </div>
+      </div>
+     </article>
+     <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+      <img alt="Cup of steaming hot masala chai tea with spices and milk in a white ceramic cup" class="w-full h-48 object-cover" height="250" src="https://storage.googleapis.com/a1aa/image/948ee2d7-4e59-4cb3-90ee-182552a9e713.jpg" width="400"/>
+      <div class="p-5 flex flex-col flex-grow">
+       <h4 class="text-xl font-semibold mb-2">
+        Masala Chai
+       </h4>
+       <p class="text-gray-600 flex-grow">
+        Traditional Indian spiced tea brewed with milk and aromatic spices.
+       </p>
+       <div class="mt-4 font-bold text-red-600 text-lg">
+        ₹90
+       </div>
+      </div>
+     </article>
+     <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+      <img alt="Cup of South Indian filter coffee with frothy milk served in a stainless steel tumbler and dabara" class="w-full h-48 object-cover" height="250" src="https://storage.googleapis.com/a1aa/image/6dc4c1e1-2474-4a2d-17c1-ea49f3fb53c6.jpg" width="400"/>
+      <div class="p-5 flex flex-col flex-grow">
+       <h4 class="text-xl font-semibold mb-2">
+        Filter Coffee
+       </h4>
+       <p class="text-gray-600 flex-grow">
+        Strong South Indian coffee brewed with a metal filter and milk.
+       </p>
+       <div class="mt-4 font-bold text-red-600 text-lg">
+        ₹110
+       </div>
+      </div>
+     </article>
+     <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+      <img alt="Glass of sweet lime soda with ice cubes, lime slices and mint leaves" class="w-full h-48 object-cover" height="250" src="https://storage.googleapis.com/a1aa/image/ad3cf225-0773-4d0f-c58e-1b9a8f6ad2f7.jpg" width="400"/>
+      <div class="p-5 flex flex-col flex-grow">
+       <h4 class="text-xl font-semibold mb-2">
+        Sweet Lime Soda
+       </h4>
+       <p class="text-gray-600 flex-grow">
+        Refreshing carbonated drink with fresh lime juice and sugar.
+       </p>
+       <div class="mt-4 font-bold text-red-600 text-lg">
+        ₹110
+       </div>
+      </div>
+     </article>
+     <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+      <img alt="Traditional Indian buttermilk with coriander and green chili garnish in a glass" class="w-full h-48 object-cover" height="250" src="https://storage.googleapis.com/a1aa/image/6d8cb153-7eae-4d55-b074-282b684dc6c9.jpg" width="400"/>
+      <div class="p-5 flex flex-col flex-grow">
+       <h4 class="text-xl font-semibold mb-2">
+        Buttermilk
+       </h4>
+       <p class="text-gray-600 flex-grow">
+        Cooling yogurt-based drink flavored with spices and herbs.
+       </p>
+       <div class="mt-4 font-bold text-red-600 text-lg">
+        ₹90
+       </div>
+      </div>
+     </article>
+     <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+      <img alt="Fresh coconut water served in a green coconut with a straw and a slice of lime" class="w-full h-48 object-cover" height="250" src="https://storage.googleapis.com/a1aa/image/fc13dcbd-60c7-447c-4876-454ac06a546b.jpg" width="400"/>
+      <div class="p-5 flex flex-col flex-grow">
+       <h4 class="text-xl font-semibold mb-2">
+        Fresh Coconut Water
+       </h4>
+       <p class="text-gray-600 flex-grow">
+        Natural and refreshing coconut water served chilled.
+       </p>
+       <div class="mt-4 font-bold text-red-600 text-lg">
+        ₹130
+       </div>
+      </div>
+     </article>
+    </div>
+   </section>
+  </main>
+  <footer class="bg-white border-t border-gray-200 py-6 text-center text-gray-600 text-sm">
+   © 2024 Pranjal Restaurant. All rights reserved.
+  </footer>
+  <script>
+   const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+ </body>
+</html>
